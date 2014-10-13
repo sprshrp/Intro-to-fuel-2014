@@ -1,0 +1,27 @@
+### Get an Authorization Token
+
+curl \
+-H "Content-Type: application/json" \
+-d '
+{
+  "clientId": "-- insert your ClientID --",
+  "clientSecret": "-- insert your clientSecret --"
+}' \
+https://auth.exacttargetapis.com/v1/requestToken
+
+### Enter an Interaction for a User
+
+curl \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer -- insert your authorization token from above--" \
+-d '
+{
+  "ContactKey" : "jb4a@bh.exacttarget.com",
+  "EventDefinitionKey": "-- insert your definition key --", 
+  "Data" : {
+    "EmailAddress" : "jb4a@bh.exacttarget.com"
+  }
+}
+' \
+https://www.exacttargetapis.com/interaction-experimental/v1/events
+

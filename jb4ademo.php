@@ -47,7 +47,7 @@
 </body>
 </html>';
 
-	$dataExtensionName = "jb4a - Customers";
+	$dataExtensionName = "jb4a - dreamforce";
 	$customerEmail = "jb4a@bh.exacttarget.com";
 	$customerFullName = "Robert Paulson";
 
